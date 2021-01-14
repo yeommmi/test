@@ -1,4 +1,7 @@
-*/
+* {
+    padding: 0;
+    margin: 0;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,7 +22,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	color: #231916;
+	list-style: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -27,8 +32,13 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	display: block;
+	background-color: #f6f4f1;
+	overscroll-behavior: none;
+	overflow-x: hidden;
+	word-break: keep-all;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -44,3 +54,178 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a:link {
+	text-decoration: none;
+}
+
+/* layout */
+#wrap {
+	
+}
+
+header {
+	height: 176px;
+	padding-top: 51px;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 0;
+}
+
+header .menu {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 30px;
+	height: 30px;
+}
+
+header .menu > span {
+	display: block;
+	height: 3px;
+	margin-top: 9px;
+	background-color: #231916;
+}
+
+#container .image img {
+	width: 100%;
+	text-align: center;
+}
+
+#container .section-2 > div  {
+	width: 33.3%;
+	padding: 0 11px 0 11px;
+}
+
+#container .title-1 {
+	font-size: 22px;
+	margin: 0px 0px 20px;
+}
+
+#container .section-1 img {
+	width: 100%;
+	vertical-align: top;
+}
+
+#container .section-1 .text-con {
+	padding: 46px 40px 0 50px;
+}
+
+#container .section-1 .text-1 {
+	font-size: 35px;
+	font-weight: 300;
+	line-height: 1.56;
+	text-align: center;
+}
+
+#container .section-2 {
+	display: flex;
+	justify-content: space-between;
+	margin: 200px -11px 0;
+}
+
+#container .section-2 .text-con {
+	padding: 46px 40px 0 50px;
+}
+
+#container .section-2 .text-con {
+	padding: 46px 40px 0 50px;
+}
+
+#container .section-2 .title-1 {
+	margin-bottom: 20px;
+	font-size: 22px;
+	line-height: 1.35;
+}
+
+#container .section-2 .text-2 {
+	font-size: 14px;
+	line-height: 1.73;
+}
+
+#container .section-2 .text-more {
+	display: inline-block;
+	padding: 20px 2px 3px 1px;
+	line-height: 1;
+	border-bottom: 1px solid #231916;
+}
+
+#container .section-3 {
+	position: relative;
+	margin-top: 100px;
+	padding: 0 0 130px 0;
+	border-top: 1px solid #dddbd8;
+}
+
+#container .section-3 .text-con {
+	padding: 46px 40px 0 50px;
+}
+
+#container .section-3 .text-3 {
+	font-size: 23px;
+	font-weight: 200;
+	line-height: 1.71;
+}
+
+#container .section-3 .button {
+	position: absolute;
+	top: 58px;
+	right: 147px;
+	display: inline-block;
+	border: 1px solid #231916;
+	padding: 0 65px;
+	height: 52px;
+	font-size: 16px;
+	line-height: 50px;
+}
+
+#footer {
+	background-color: #f1efeb;
+}
+
+#footer .footer-wrap {
+	display: flex;
+}
+
+#footer .footer-wrap .footer-list {
+	border-right: 1px solid #dddbd8;
+	width: 25%;
+	padding: 50px 0 90px 42px;
+}
+
+#footer .footer-wrap .footer-list:first-child {
+	width: 45%;
+}
+
+#footer div h3 {
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+
+#footer div li {
+	font-size: 13px;
+	line-height: 1.75;
+}
+
+#footer div .sns li {
+	font-size: 15px;
+	line-height: 1.75;
+}
+
+
+
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+
+}
+
+
+
