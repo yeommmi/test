@@ -66,6 +66,11 @@ a:link {
 
 /* layout */
 
+.only-m {
+	display: none;
+}
+
+/* header */
 
 header {
 	height: 176px;
@@ -91,20 +96,13 @@ header .menu > span {
 	margin-top: 9px;
 	background-color: #231916;
 }
+/* //header */
+
+/* container */
 
 #container .image img {
 	width: 100%;
 	text-align: center;
-}
-
-#container .section-2 > div  {
-	width: 33.3%;
-	padding: 0 11px 0 11px;
-}
-
-#container .title-1 {
-	font-size: 22px;
-	margin: 0px 0px 20px;
 }
 
 #container .section-1 img {
@@ -129,8 +127,9 @@ header .menu > span {
 	margin: 200px -11px 0;
 }
 
-#container .section-2 .text-con {
-	padding: 46px 40px 0 50px;
+#container .section-2 > div  {
+	width: 33.3%;
+	padding: 0 11px 0 11px;
 }
 
 #container .section-2 .text-con {
@@ -184,6 +183,9 @@ header .menu > span {
 	line-height: 50px;
 }
 
+/* //container */
+
+/* footer */
 #footer {
 	background-color: #f1efeb;
 }
@@ -217,18 +219,261 @@ header .menu > span {
 	line-height: 1.75;
 }
 
-
-
+/* //footer */
 
 /* tablet */
 @media screen and (min-width:768px) and (max-width:1199px) {
+.only-m {
+	display: none;
+}
+
+/* header */
+
+header {
+	height: 156px;
+}
+
+header .menu {
+	width: 25px;
+	height: 25px;
+}
+
+header .menu > span {
+	margin-top: 7px;
 
 }
+/* //header */
+
+/* container */
+
+#container .section-1 .text-con {
+	padding-bottom: 0;
+}
+
+#container .section-1 .text-1 {
+	font-size: 32px;
+}
+
+
+#container .section-2 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 100px;
+}
+
+#container .section-2 > div  {
+	width: 50%;
+}
+
+#container .section-2 .text-con {
+	padding: 20px 20px 50px;
+}
+
+#container .section-2 .title-1 {
+	margin-bottom: 14px;
+	font-size: 16px;
+	
+}
+
+#container .section-2 .text-more {
+	font-size: 14px;
+}
+
+#container .section-3 {
+	margin-top: 60px;
+}
+
+#container .section-3 .text-con {
+	padding: 46px 40px 0 20px;
+}
+
+#container .section-3 .text-3 {
+	font-size: 20px;
+}
+
+#container .section-3 .button {
+	top: 54px;
+	right: 60px;
+	padding: 0 40px;
+	font-size: 15px;
+}
+
+/* //container */
+
+/* footer */
+
+
+#footer .footer-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#footer .footer-wrap .footer-list {
+	border-right: 0;
+	border-top: 1px solid #dddbd8;
+	width: 50%;
+	padding: 50px 0 40px 20px;
+}
+
+#footer .footer-wrap .footer-list:nth-child(1) {
+	order: 3;
+	width: 50%;
+}
+#footer .footer-wrap .footer-list:nth-child(2) {
+	order: 1;	
+}
+#footer .footer-wrap .footer-list:nth-child(3) {
+	order: 2;
+}
+#footer .footer-wrap .footer-list:nth-child(4) {
+	order: 4;
+}
+
+
+#footer div h3 {
+	margin-bottom: 15px;
+}
+
+#footer div li {
+	font-size: 11px;
+}
+/* //footer */
+
+}
+
+
 
 /* mobile */
 @media screen and (max-width: 767px) {
 
+.only-pc {
+	display: none;
+}
+.only-m {
+	display: block;
+}
+
+/* header */
+
+header {
+	height: 70px;
+	padding-top: 25px;
+}
+
+header h1 img {
+	width: 22px;
+}
+header .menu {
+	width: 18px;
+	height: 18px;
+	top: 22px;
+	left: 20px;
+}
+
+header .menu > span {
+	height: 2px;
+	margin-top: 4px;
+}
+/* //header */
+
+/* container */
+
+#container .section-1 .text-con {
+	padding-top: 26px;
+}
+
+#container .section-1 .text-1 {
+	font-size: 22px;
+}
+
+#container .section-2 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+#container .section-2 > div  {
+	width: 100%;
+}
+
+#container .section-2 .text-con {
+	padding: 20px 20px 50px;
+}
+
+#container .section-2 .title-1 {
+	margin-bottom: 14px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#container .section-2 .text-more {
+	font-size: 14px;
+}
+
+#container .section-3 {
+	height: 240px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+#container .section-3 .text-con {
+	padding: 20px 20px;
+}
+
+#container .section-3 .text-3 {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+#container .section-3 .button {
+	position: relative;
+	top: 60px;
+	left: 20px;
+	height: 35px;
+	padding: 0 30px;
+	font-size: 11px;
+	line-height: 3;
+}
+
+/* //container */
+
+/* footer */
+
+
+#footer .footer-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#footer .footer-wrap .footer-list {
+	border-right: 0;
+	border-top: 1px solid #dddbd8;
+	width: 100%;
+	padding: 20px;
+}
+
+#footer .footer-wrap .footer-list:nth-child(1) {
+	order: 4;
+	width: 100%;
+}
+#footer .footer-wrap .footer-list:nth-child(2) {
+	order: 1;	
+}
+#footer .footer-wrap .footer-list:nth-child(3) {
+	order: 2;
+}
+#footer .footer-wrap .footer-list:nth-child(4) {
+	order: 3;
 }
 
 
+#footer div h3 {
+	margin-bottom: 15px;
+}
 
+#footer div li {
+	font-size: 11px;
+}
+/* //footer */
+
+}
