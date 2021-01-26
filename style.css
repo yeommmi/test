@@ -44,6 +44,10 @@ body {
 	word-break: keep-all;
 }
 
+body.active {
+	overflow: hidden;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -116,7 +120,7 @@ header .menu span:after {
 }
 
 header .menu span:after {
-	top: 20px;
+	top:20px;
 }
 
 
@@ -131,7 +135,7 @@ header .menu.active {
 	transform:rotate(-90deg);
   }
   header .menu.active span:after {
-	display:none;
+	display: none;
   }
   
   
@@ -149,6 +153,9 @@ header .menu.active {
 }
 
 
+body.active .dim {display:block;}
+
+
 /* menuwrap */
 
 #menuwrap {
@@ -159,6 +166,7 @@ header .menu.active {
 	width: 70%;
 	padding: 130px 35px 0;
 	background-color: #f5f4f1;
+	transition: all .3s ease-in-out;
 }
 
 
@@ -192,6 +200,10 @@ header .menu.active {
 	font-weight: 500;
 }
 
+#menuwrap.active {
+	left:0;
+  }
+
 /* //header */
 
 
@@ -218,11 +230,66 @@ header .menu.active {
 	font-weight: 500;
 }
 
-.tab-type-1 li a.active {
+.tab-type-1 a.active {
 	border-bottom:1px solid #000;
+	
 }
 
-/* //tab-type-1 */
+/* faq-list */
+
+.faqwrap {
+	padding: 70px 72px 70px 80px;
+	border-top: 1px solid #dbdad7;
+}
+
+.faqwrap h2 {
+	font-size: 28px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dbdad7;
+}
+
+.faqwrap .faq-list {
+	padding: 0 0 0 500px;
+}
+
+.faqwrap .faq-list li {
+	border-top: 1px solid #dbdad7;
+}
+
+.faqwrap .faq-list li:first-child {
+	border-top: none;
+}
+
+.faqwrap .faq-list li .q {
+	display: block;
+	font-size: 18px;
+	padding: 20px 20px;
+	line-height: 1.7;
+	margin-left: auto;
+}
+
+
+.faqwrap .faq-list li .a{
+	display: none;
+	font-size: 16px;
+	line-height: 1.7;
+	padding: 0 20px 20px 20px;
+}
+
+.faqwrap .faq-list li.active .q {
+	font-weight: 700;
+}
+
+
+.faqwrap .faq-list li.active .a{
+	display: block;
+}
+
+
+
+
+
+
 
 #container .image img {
 	width: 100%;
@@ -309,7 +376,7 @@ header .menu.active {
 
 
 
-.product-wrap {
+.product-list {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 0;
@@ -317,28 +384,37 @@ header .menu.active {
 	margin: 40px 0 0 0;
 }
 
-.product-wrap > div  {
-	width: 33.3%;
+.product-list > li  {
+	width: 33.333%;
 }
 
-.product-wrap img {
+.product-list img {
 	width: 100%;
 	vertical-align: top;
 }
 
-.product-wrap .title-1 {
+
+
+.product-list .title {
 	font-size: 22px;
 	font-weight: 400;
 	margin: 30px 0 0 40px;
 }
 
-.product-wrap .price {
+.product-list .price {
 	font-size: 22px;
 	font-weight: 700;
 	margin: 20px 0 80px 40px;
 }
 
+.product-list .image .default {
 
+}
+
+.product-list .image .hover {
+	width: 33.333%;
+	border: 1px solid red;
+}
 
 
 
@@ -567,10 +643,8 @@ header .menu span:after {
 
 
 
-
-
-
 /* //header */
+
 
 /* container */
 
