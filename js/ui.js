@@ -24,15 +24,20 @@ $(function(){
 
     
 
-    var tab = $('.tab-type-1 a');
+    var tab = $('.tab-type-1');
+    var tabbtn = tab.find('a');
     
-    tab.on('click', function(){
+    tabbtn.on('click', function(){
       var $this = $(this);
+      var $target = $this.attr('date-target');
       var parent = $this.parent('li');
       var sibl = parent.siblings('li');
 
-      parent.toggleClass('active');
-      sibl.removeClass('active');
+      $($target).siblings('li').hide();
+      $($target).fadeIn(150);
+
+      $this.addClass('active');
+      sibl.find('a').removeClass('active');
 
       return false;
     });
